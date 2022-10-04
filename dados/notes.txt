@@ -1,0 +1,40 @@
+Logistic Regression - No good
+svm.SVC - No good
+
+XGB - 78-80%. 
+run_XGB(2, 0.3, 0.5, 0.5, 0.7)
+run_XGB(3, 2.7, 1.3, 0.1, 0.3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+relevantes = ['Classificacao_da_Oportunidade', 'Faixa_de_Faturamento_Agregado',
+       'id_fechou', 'numero_relacionamentos',
+       'numero_relacionamentos_convertidos', 'intervalo_tempo',
+       'Valor_corrigido2', 'Forma_de_Contratacao_Agregado', 'Concorrentes',
+       'n_solucoes', 'Software', 'Comissão sobre Parceiros', 'Cybersecurity',
+       'Desdobramento de metas', 'ESG', 'Equilíbrio fiscal', 'Skill_dev',
+       'Gestão Estratégica', 'Gestão da Educação', 'Gestão da Operação',
+       'Gestão da Receita', 'Gestão da Saúde', 'Gestão da Segurança Pública',
+       'Gestão da Segurança Viária', 'Gestão de Gastos',
+       'Gestão de operações projetizadas', 'Gestão de pessoas',
+       'Processes Excellence', 'Produtos digitais', 'S_amp_OP_S_amp_OE',
+       'Transformação Digital', 'Treinamentos', 'Roadmap', 'Total_HH',
+       'Custo_Total', 'Margem_Total', 'Classificacao_da_Oportunidade']
