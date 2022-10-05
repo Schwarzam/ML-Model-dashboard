@@ -6,6 +6,26 @@ import os
 import pandas as pd
 import numpy as np
 
+
+def cap_outliers(df, column):
+    
+    upper = df[column].mean() + 3*df[column].std()
+    down = df[column].mean() - 3*df[column].std()
+
+    df[(df[column] > upper) | (df[column] < down)]
+
+    df[column] = np.where(
+        df[column]>upper,
+        upper,
+        np.where(
+            df[column]<down,
+            down,
+            df[column]
+        )
+    )
+    
+    return df
+
 def generate_labels(df, target = 'id_fechou'):
     """Generate list with training columns.
 
@@ -28,6 +48,7 @@ def processColumns(
                                     'Equilíbrio fiscal', 'Concorrentes', 'Gestão da Receita', 'Gestão da Educação', 'Gestão da Segurança Viária', 'ESG',
                                     'Gestão de operações projetizadas', 'Software', 'Gestão Estratégica', 'Skill_dev', 'Gestão de pessoas',
                                     'Gestão de Gastos', 'n_solucoes'], 
+                columns_w_outliers=['Valor_corrigido2', 'Custo_Total', 'Custo_Total_per_Valor_corrigido2'],
                 create_columns=True):
     
     """Remove selected columns, and add columns if wanted.
@@ -58,8 +79,11 @@ def processColumns(
     s = pd.Series(np.zeros(len(df)))
     for col in columns_to_sum:
         s += df[col]
-    
     df["num_solucoes"] = s
+
+
+    for col in columns_w_outliers:
+        df = cap_outliers(df, col)
 
     df = df.loc[:,~df.columns.str.startswith('Unname')]
     
