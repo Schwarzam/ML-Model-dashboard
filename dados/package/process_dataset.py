@@ -3,6 +3,9 @@ import joblib
 
 import os
 
+import pandas as pd
+import numpy as np
+
 def generate_labels(df, target = 'id_fechou'):
     """Generate list with training columns.
 
@@ -21,11 +24,10 @@ def generate_labels(df, target = 'id_fechou'):
 def processColumns(
                 df, 
                 remove_columns = ['Data_de_criacao', 'ano', 'ID_cliente', 'Codigo_da_oportunidade', 'Gestão da Segurança Pública', 
-                 'S_amp_OP_S_amp_OE', 'Transformação Digital', 'Roadmap'], 
-                secondary_remove = ['Comissão sobre Parceiros', 'Cybersecurity', 'Gestão da Saúde', 'Treinamentos',
-                'Equilíbrio fiscal', 'Concorrentes', 'Gestão da Receita', 'Gestão da Educação', 'Gestão da Segurança Viária', 'ESG',
-                'Gestão de operações projetizadas', 'Software', 'Gestão Estratégica', 'Skill_dev', 'Gestão de pessoas',
-                'Gestão de Gastos'], 
+                                    'S_amp_OP_S_amp_OE', 'Transformação Digital', 'Roadmap', 'Comissão sobre Parceiros', 'Cybersecurity', 'Gestão da Saúde', 'Treinamentos',
+                                    'Equilíbrio fiscal', 'Concorrentes', 'Gestão da Receita', 'Gestão da Educação', 'Gestão da Segurança Viária', 'ESG',
+                                    'Gestão de operações projetizadas', 'Software', 'Gestão Estratégica', 'Skill_dev', 'Gestão de pessoas',
+                                    'Gestão de Gastos', 'n_solucoes'], 
                 create_columns=True):
     
     """Remove selected columns, and add columns if wanted.
@@ -44,8 +46,27 @@ def processColumns(
         df["numero_relacionamentos_convertidos_per_numero_relacionamentos"] = df["numero_relacionamentos_convertidos"]/df["numero_relacionamentos"]
         df["Gestão da Receita_per_Gestão de Gastos"] = df["Gestão da Receita"] + df["Gestão de Gastos"]
 
-    df = df.drop(remove_columns, axis=1)
-    df = df.drop(secondary_remove, axis=1)
+    columns_to_sum = ['Software', 'Comissão sobre Parceiros', 'Cybersecurity',
+       'Desdobramento de metas', 'ESG', 'Equilíbrio fiscal', 'Skill_dev',
+       'Gestão Estratégica', 'Gestão da Educação', 'Gestão da Operação',
+       'Gestão da Receita', 'Gestão da Saúde', 'Gestão da Segurança Pública',
+       'Gestão da Segurança Viária', 'Gestão de Gastos',
+       'Gestão de operações projetizadas', 'Gestão de pessoas',
+       'Processes Excellence', 'Produtos digitais', 'S_amp_OP_S_amp_OE',
+       'Transformação Digital', 'Treinamentos', 'Roadmap']
+    
+    s = pd.Series(np.zeros(len(df)))
+    for col in columns_to_sum:
+        s += df[col]
+    
+    df["num_solucoes"] = s
+
+    df = df.loc[:,~df.columns.str.startswith('Unname')]
+    
+    for col in remove_columns: 
+        try: df = df.drop(remove_columns, axis=1)
+        except: pass
+
     return df
 
 

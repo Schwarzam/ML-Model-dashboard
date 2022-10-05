@@ -16,10 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from api.views import get_info
+from api.views import upload, get_files_available, visualize_df
 
 urlpatterns = [
     path('api/admin/', admin.site.urls),
 
-    path('api/info', get_info),
+    path('api/upload', upload),
+    path('api/get_files_available', get_files_available),
+
+    path('api/visualize_df', visualize_df)
 ]
