@@ -1,0 +1,16 @@
+Higher = 0.5405405405405406
+    test_size = 0.12, n_estimators = 30, max_depth = 1, min_samples_split = 0.1, min_weight_fraction_leaf = 0.0, max_features = sqrt, max_leaf_nodes = 2, min_impurity_decrease = 0.0, bootstrap = True, oob_score = True, n_jobs = None, random_state = None, verbose = 0, warm_start = True, ccp_alpha = 0.0, max_samples = None
+Higher = 0.581081081081081
+    test_size = 0.12, n_estimators = 30, max_depth = 1, min_samples_split = 0.1, min_weight_fraction_leaf = 0.0, max_features = sqrt, max_leaf_nodes = 2, min_impurity_decrease = 0.0, bootstrap = True, oob_score = True, n_jobs = None, random_state = None, verbose = 0, warm_start = True, ccp_alpha = 0.0, max_samples = 0.2
+Higher = 0.6081081081081081
+    test_size = 0.12, n_estimators = 30, max_depth = 1, min_samples_split = 0.1, min_weight_fraction_leaf = 0.0, max_features = sqrt, max_leaf_nodes = 2, min_impurity_decrease = 0.0, bootstrap = True, oob_score = True, n_jobs = None, random_state = None, verbose = 0, warm_start = True, ccp_alpha = 0.0, max_samples = 0.5
+Higher = 0.5675675675675675
+    test_size = 0.12, n_estimators = 30, max_depth = 1, min_samples_split = 0.1, min_weight_fraction_leaf = 0.0, max_features = sqrt, max_leaf_nodes = 2, min_impurity_decrease = 0.0, bootstrap = True, oob_score = True, n_jobs = None, random_state = None, verbose = 0, warm_start = True, ccp_alpha = 0.0, max_samples = None
+Higher = 0.6351351351351351
+    test_size = 0.12, n_estimators = 30, max_depth = 1, min_samples_split = 0.1, min_weight_fraction_leaf = 0.0, max_features = sqrt, max_leaf_nodes = 2, min_impurity_decrease = 0.0, bootstrap = True, oob_score = True, n_jobs = None, random_state = None, verbose = 0, warm_start = True, ccp_alpha = 0.0, max_samples = 0.2
+Higher = 0.5675675675675675
+    test_size = 0.12, n_estimators = 30, max_depth = 1, min_samples_split = 0.1, min_weight_fraction_leaf = 0.0, max_features = sqrt, max_leaf_nodes = 2, min_impurity_decrease = 0.0, bootstrap = True, oob_score = True, random_state = None, verbose = 0, ccp_alpha = 0.0, max_samples = None
+Higher = 0.581081081081081
+    test_size = 0.12, n_estimators = 30, max_depth = 1, min_samples_split = 0.1, min_weight_fraction_leaf = 0.0, max_features = sqrt, max_leaf_nodes = 2, min_impurity_decrease = 0.0, bootstrap = True, oob_score = True, random_state = None, verbose = 0, ccp_alpha = 0.0, max_samples = 0.2
+Higher = 0.6351351351351351
+    test_size = 0.12, n_estimators = 30, max_depth = 1, min_samples_split = 0.1, min_weight_fraction_leaf = 0.0, max_features = sqrt, max_leaf_nodes = 2, min_impurity_decrease = 0.0, bootstrap = True, oob_score = True, random_state = None, verbose = 0, ccp_alpha = 0.5, max_samples = None
