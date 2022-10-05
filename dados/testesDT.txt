@@ -1,0 +1,12 @@
+Higher = 0.7398373983739838
+    max_depth = None, min_samples_split = 0.1, splitter = best, max_features = None, min_impurity_decrease = 0.0, ccp_alpha = 0.0
+Higher = 0.7479674796747967
+    max_depth = 2, min_samples_split = 0.15000000000000002, splitter = best, max_features = 12, min_impurity_decrease = 0.0, ccp_alpha = 0.0
+Higher = 0.7723577235772358
+    max_depth = 3, min_samples_split = 0.20000000000000004, splitter = best, max_features = sqrt, min_impurity_decrease = 0.0, ccp_alpha = 0.0
+Higher = 0.7073170731707317
+    max_depth = None, min_samples_split = 0.1, splitter = best, max_features = None, min_impurity_decrease = 0.0, ccp_alpha = 0.0, min_samples_leaf = 0.1
+Higher = 0.7317073170731707
+    max_depth = None, min_samples_split = 0.15000000000000002, splitter = random, max_features = 10, min_impurity_decrease = 0.0, ccp_alpha = 0.0, min_samples_leaf = 0.1
+Higher = 0.7398373983739838
+    max_depth = 2, min_samples_split = 0.5000000000000001, splitter = random, max_features = None, min_impurity_decrease = 0.0, ccp_alpha = 0.0, min_samples_leaf = 0.1

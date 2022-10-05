@@ -1,0 +1,172 @@
+Higher = 0.7560975609756098
+    base_estimator = None, n_estimators = 3, learning_rate = 1.3000000000000003, loss = linear, random_state = 42
+Higher = 0.7723577235772358
+    base_estimator = None, n_estimators = 5, learning_rate = 0.7000000000000001, loss = exponential, random_state = 42
+Higher = 0.7804878048780488
+    base_estimator = None, n_estimators = 7, learning_rate = 0.7000000000000001, loss = exponential, random_state = 42
+Higher = 0.7967479674796748
+    base_estimator = None, n_estimators = 7, learning_rate = 0.9000000000000001, loss = exponential, random_state = None
+Higher = 0.8048780487804879
+    base_estimator = None, n_estimators = 23, learning_rate = 0.1, loss = linear, random_state = None
+Higher = 0.8130081300813008
+    base_estimator = None, n_estimators = 27, learning_rate = 0.30000000000000004, loss = linear, random_state = 42
+Higher = 0.7560975609756098
+    test_size = 0.2, base_estimator = None, n_estimators = 7, learning_rate = 1.9000000000000004, loss = linear, random_state = None
+Higher = 0.7642276422764228
+    test_size = 0.2, base_estimator = None, n_estimators = 9, learning_rate = 1.9000000000000004, loss = linear, random_state = None
+Higher = 0.7723577235772358
+    test_size = 0.2, base_estimator = None, n_estimators = 11, learning_rate = 0.9000000000000001, loss = square, random_state = 42
+Higher = 0.7967479674796748
+    test_size = 0.2, base_estimator = None, n_estimators = 13, learning_rate = 0.5000000000000001, loss = square, random_state = None
+Higher = 0.8048780487804879
+    test_size = 0.2, base_estimator = None, n_estimators = 23, learning_rate = 1.9000000000000004, loss = linear, random_state = None
+Higher = 0.75
+    test_size = 0.3, base_estimator = None, n_estimators = 31, learning_rate = 0.1, loss = square, random_state = None
+Higher = 0.7608695652173914
+    test_size = 0.3, base_estimator = None, n_estimators = 36, learning_rate = 1.3000000000000003, loss = linear, random_state = None
+Higher = 0.7608695652173914
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 0.7000000000000001, loss = square, random_state = None
+Higher = 0.7717391304347826
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 4.1000000000000005, loss = exponential, random_state = None
+Higher = 0.782608695652174
+    test_size = 0.15, base_estimator = None, n_estimators = 11, learning_rate = 0.5000000000000001, loss = linear, random_state = None
+Higher = 0.7934782608695652
+    test_size = 0.15, base_estimator = None, n_estimators = 11, learning_rate = 1.1000000000000003, loss = linear, random_state = 42
+Higher = 0.7065217391304348
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 0.1, loss = linear, random_state = None
+Higher = 0.8043478260869565
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 0.1, loss = square, random_state = None
+Higher = 0.8152173913043478
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 5.6, loss = linear, random_state = None
+Higher = 0.7608695652173914
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 7.1, loss = square, random_state = None
+Higher = 0.7934782608695652
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 8.6, loss = exponential, random_state = None
+Higher = 0.8369565217391305
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 19.1, loss = exponential, random_state = None
+Higher = 0.7560975609756098
+    test_size = 0.2, base_estimator = None, n_estimators = 11, learning_rate = 2.6, loss = linear, random_state = None
+Higher = 0.75
+    test_size = 0.15, base_estimator = None, n_estimators = 41, learning_rate = 4.6, loss = linear, random_state = None
+Higher = 0.6413043478260869
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 1.0, loss = linear, random_state = None
+Higher = 0.6521739130434783
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 1.0, loss = square, random_state = None
+Higher = 0.6630434782608695
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 1.5, loss = linear, random_state = None
+Higher = 0.6739130434782609
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 1.5, loss = square, random_state = None
+Higher = 0.6956521739130435
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 2.5, loss = exponential, random_state = None
+Higher = 0.7065217391304348
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 7.0, loss = exponential, random_state = None
+Higher = 0.7282608695652174
+    test_size = 0.15, base_estimator = None, n_estimators = 11, learning_rate = 6.0, loss = linear, random_state = None
+Higher = 0.7391304347826086
+    test_size = 0.15, base_estimator = None, n_estimators = 31, learning_rate = 1.5, loss = linear, random_state = None
+Higher = 0.6521739130434783
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 1.0, loss = linear, random_state = None
+Higher = 0.6847826086956522
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 7.0, loss = exponential, random_state = None
+Higher = 0.6956521739130435
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 38.5, loss = exponential, random_state = None
+Higher = 0.717391304347826
+    test_size = 0.15, base_estimator = None, n_estimators = 11, learning_rate = 5.5, loss = linear, random_state = None
+Higher = 0.7282608695652174
+    test_size = 0.15, base_estimator = None, n_estimators = 16, learning_rate = 4.0, loss = linear, random_state = None
+Higher = 0.7391304347826086
+    test_size = 0.15, base_estimator = None, n_estimators = 41, learning_rate = 5.5, loss = linear, random_state = None
+Higher = 0.5978260869565217
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 1.0, loss = linear, random_state = None
+Higher = 0.6086956521739131
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 1.0, loss = linear, random_state = 12
+Higher = 0.6195652173913043
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 1.0, loss = square, random_state = None
+Higher = 0.6521739130434783
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 1.0, loss = exponential, random_state = None
+Higher = 0.6847826086956522
+    test_size = 0.15, base_estimator = None, n_estimators = 1, learning_rate = 12.0, loss = square, random_state = None
+Higher = 0.717391304347826
+    test_size = 0.15, base_estimator = None, n_estimators = 6, learning_rate = 1.0, loss = square, random_state = None
+Higher = 0.5691056910569106
+    test_size = 0.2, base_estimator = None, n_estimators = 1, learning_rate = 1.0, loss = linear, random_state = None
+Higher = 0.6585365853658537
+    test_size = 0.2, base_estimator = None, n_estimators = 1, learning_rate = 1.0, loss = linear, random_state = 12
+Higher = 0.6747967479674797
+    test_size = 0.2, base_estimator = None, n_estimators = 1, learning_rate = 9.8, loss = square, random_state = None
+Higher = 0.6829268292682927
+    test_size = 0.2, base_estimator = None, n_estimators = 1, learning_rate = 16.400000000000002, loss = linear, random_state = None
+Higher = 0.6910569105691057
+    test_size = 0.2, base_estimator = None, n_estimators = 11, learning_rate = 1.0, loss = linear, random_state = None
+Higher = 0.6081081081081081
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 1.0, loss = linear, random_state = None
+Higher = 0.6621621621621622
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 1.0, loss = exponential, random_state = None
+Higher = 0.6756756756756757
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 29.6, loss = exponential, random_state = None
+Higher = 0.6891891891891891
+    test_size = 0.12, base_estimator = None, n_estimators = 6, learning_rate = 3.2, loss = linear, random_state = 12
+Higher = 0.7027027027027027
+    test_size = 0.12, base_estimator = None, n_estimators = 11, learning_rate = 3.2, loss = exponential, random_state = None
+Higher = 0.7297297297297297
+    test_size = 0.12, base_estimator = None, n_estimators = 11, learning_rate = 3.2, loss = exponential, random_state = 12
+Higher = 0.6216216216216216
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 1.0, loss = linear, random_state = None
+Higher = 0.6486486486486487
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 1.0, loss = square, random_state = None
+Higher = 0.6621621621621622
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 6.4, loss = exponential, random_state = None
+Higher = 0.6756756756756757
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 17.200000000000003, loss = square, random_state = None
+Higher = 0.6891891891891891
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 19.900000000000002, loss = exponential, random_state = None
+Higher = 0.7162162162162162
+    test_size = 0.12, base_estimator = None, n_estimators = 6, learning_rate = 3.7, loss = exponential, random_state = None
+Higher = 0.527027027027027
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 1.0, loss = linear, random_state = None
+Higher = 0.5405405405405406
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 1.0, loss = square, random_state = None
+Higher = 0.6621621621621622
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 1.0, loss = exponential, random_state = None
+Higher = 0.6891891891891891
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 6.4, loss = exponential, random_state = None
+Higher = 0.7162162162162162
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 30.700000000000003, loss = exponential, random_state = None
+Higher = 0.7432432432432432
+    test_size = 0.12, base_estimator = None, n_estimators = 7, learning_rate = 6.4, loss = exponential, random_state = None
+Higher = 0.7567567567567568
+    test_size = 0.12, base_estimator = None, n_estimators = 33, learning_rate = 3.7, loss = exponential, random_state = None
+Higher = 0.7027027027027027
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 1, loss = linear, random_state = None
+Higher = 0.7162162162162162
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 6, loss = exponential, random_state = None
+Higher = 0.7297297297297297
+    test_size = 0.12, base_estimator = None, n_estimators = 27, learning_rate = 1, loss = linear, random_state = None
+Higher = 0.7432432432432432
+    test_size = 0.12, base_estimator = None, n_estimators = 31, learning_rate = 1, loss = square, random_state = None
+Higher = 0.7567567567567568
+    test_size = 0.12, base_estimator = None, n_estimators = 42, learning_rate = 6, loss = linear, random_state = None
+Higher = 0.5135135135135135
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 1, loss = linear, random_state = None
+Higher = 0.6351351351351351
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 1, loss = linear, random_state = 113
+Higher = 0.6486486486486487
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 2, loss = linear, random_state = None
+Higher = 0.6756756756756757
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 3, loss = linear, random_state = None
+Higher = 0.7432432432432432
+    test_size = 0.12, base_estimator = None, n_estimators = 1, learning_rate = 15, loss = square, random_state = None
+Higher = 0.7702702702702703
+    test_size = 0.12, base_estimator = None, n_estimators = 39, learning_rate = 3, loss = exponential, random_state = None
+Higher = 0.6756756756756757
+    test_size = 0.12, base_estimator = None, n_estimators = 20, learning_rate = 1, loss = linear, random_state = None
+Higher = 0.6891891891891891
+    test_size = 0.12, base_estimator = None, n_estimators = 20, learning_rate = 1, loss = exponential, random_state = 42
+Higher = 0.7027027027027027
+    test_size = 0.12, base_estimator = None, n_estimators = 20, learning_rate = 2, loss = exponential, random_state = 42
+Higher = 0.7162162162162162
+    test_size = 0.12, base_estimator = None, n_estimators = 20, learning_rate = 6, loss = exponential, random_state = None
+Higher = 0.7297297297297297
+    test_size = 0.12, base_estimator = None, n_estimators = 22, learning_rate = 6, loss = linear, random_state = 42
+Higher = 0.8378378378378378
+    test_size = 0.12, base_estimator = None, n_estimators = 23, learning_rate = 5, loss = exponential, random_state = None
