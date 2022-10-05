@@ -18,8 +18,15 @@ def generate_labels(df, target = 'id_fechou'):
     return train_labels, target
 
 
-def processColumns(df, remove_columns = ['Data_de_criacao', 'ano', 'ID_cliente', 'Codigo_da_oportunidade', 'Gestão da Segurança Pública', 
-                 'S_amp_OP_S_amp_OE', 'Transformação Digital', 'Roadmap'], create_columns=True):
+def processColumns(
+                df, 
+                remove_columns = ['Data_de_criacao', 'ano', 'ID_cliente', 'Codigo_da_oportunidade', 'Gestão da Segurança Pública', 
+                 'S_amp_OP_S_amp_OE', 'Transformação Digital', 'Roadmap'], 
+                secondary_remove = ['Comissão sobre Parceiros', 'Cybersecurity', 'Gestão da Saúde', 'Treinamentos',
+                'Equilíbrio fiscal', 'Concorrentes', 'Gestão da Receita', 'Gestão da Educação', 'Gestão da Segurança Viária', 'ESG',
+                'Gestão de operações projetizadas', 'Software', 'Gestão Estratégica', 'Skill_dev', 'Gestão de pessoas',
+                'Gestão de Gastos'], 
+                create_columns=True):
     
     """Remove selected columns, and add columns if wanted.
 
@@ -38,6 +45,7 @@ def processColumns(df, remove_columns = ['Data_de_criacao', 'ano', 'ID_cliente',
         df["Gestão da Receita_per_Gestão de Gastos"] = df["Gestão da Receita"] + df["Gestão de Gastos"]
 
     df = df.drop(remove_columns, axis=1)
+    df = df.drop(secondary_remove, axis=1)
     return df
 
 
