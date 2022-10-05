@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from api.views import get_info
+from api.views import upload
 
 urlpatterns = [
     path('api/admin/', admin.site.urls),
 
-    path('api/info', get_info),
+    path('api/upload', upload),
 ]
