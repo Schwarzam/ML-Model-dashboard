@@ -25,7 +25,7 @@ def processColumns(
                 secondary_remove = ['Comissão sobre Parceiros', 'Cybersecurity', 'Gestão da Saúde', 'Treinamentos',
                 'Equilíbrio fiscal', 'Concorrentes', 'Gestão da Receita', 'Gestão da Educação', 'Gestão da Segurança Viária', 'ESG',
                 'Gestão de operações projetizadas', 'Software', 'Gestão Estratégica', 'Skill_dev', 'Gestão de pessoas',
-                'Gestão de Gastos'], 
+                'Gestão de Gastos', 'n_solucoes'], 
                 create_columns=True):
     
     """Remove selected columns, and add columns if wanted.
