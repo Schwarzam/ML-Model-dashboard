@@ -28,7 +28,7 @@ export default function Navbar() {
                 </div>
                 <div className="flex flex-shrink-0 items-center">
                 <a href='/'>
-                <img
+                {/* <img
                     className="block h-8 w-auto lg:hidden"
                     src="https://teros.com.br/wp-content/uploads/2021/04/Logotagline.svg"
                     alt="teros"
@@ -37,17 +37,17 @@ export default function Navbar() {
                     className="hidden h-8 w-auto lg:block"
                     src="https://teros.com.br/wp-content/uploads/2021/04/Logotagline.svg"
                     alt="teros"
-                  />
+                  /> */}
                 </a>
                   
                 </div>
                 <div className="hidden md:ml-6 md:flex md:space-x-8">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <a
-                    href="#"
+                    href="/"
                     className="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
                   >
-                    Dashboard
+                    Home
                   </a>
                   <a
                     href="/about"
@@ -76,10 +76,10 @@ export default function Navbar() {
               {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               <Disclosure.Button
                 as="a"
-                href="#"
+                href="/"
                 className="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700 sm:pl-5 sm:pr-6"
               >
-                Dashboard
+                Home
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"

@@ -47,8 +47,8 @@ export default function Home(){
               <div>
                 <img
                   className="h-11 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=rose&shade=500"
-                  alt="Your Company"
+                  src="https://teros.com.br/wp-content/uploads/2021/04/Logotagline.svg"
+                  alt="teros"
                 />
               </div>
               <div className="mt-20">
