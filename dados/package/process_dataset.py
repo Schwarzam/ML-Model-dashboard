@@ -43,7 +43,8 @@ def processColumns(
         df["Custo_Total_per_Valor_corrigido2"] = df["Custo_Total"]/df["Valor_corrigido2"]
         df["numero_relacionamentos_convertidos_per_numero_relacionamentos"] = df["numero_relacionamentos_convertidos"]/df["numero_relacionamentos"]
         df["Gestão da Receita_per_Gestão de Gastos"] = df["Gestão da Receita"] + df["Gestão de Gastos"]
-
+    
+    df = df.loc[:,~df.columns.str.startswith('Unname')]
     df = df.drop(remove_columns, axis=1)
     df = df.drop(secondary_remove, axis=1)
     return df
