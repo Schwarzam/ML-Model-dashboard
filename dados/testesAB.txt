@@ -170,3 +170,28 @@ Higher = 0.7297297297297297
     test_size = 0.12, base_estimator = None, n_estimators = 22, learning_rate = 6, loss = linear, random_state = 42
 Higher = 0.8378378378378378
     test_size = 0.12, base_estimator = None, n_estimators = 23, learning_rate = 5, loss = exponential, random_state = None
+Higher = 0.6351351351351351
+    test_size = 0.12, base_estimator = None, n_estimators = 20, learning_rate = 1, loss = linear, random_state = None
+Higher = 0.6486486486486487
+    test_size = 0.12, base_estimator = None, n_estimators = 20, learning_rate = 1, loss = linear, random_state = 94
+Higher = 0.6621621621621622
+    test_size = 0.12, base_estimator = None, n_estimators = 20, learning_rate = 1, loss = linear, random_state = 3
+Higher = 0.6756756756756757
+    test_size = 0.12, base_estimator = None, n_estimators = 20, learning_rate = 1, loss = square, random_state = 71
+Higher = 0.6891891891891891
+    test_size = 0.12, base_estimator = None, n_estimators = 20, learning_rate = 1, loss = exponential, random_state = 42
+Higher = 0.7027027027027027
+    test_size = 0.12, base_estimator = None, n_estimators = 20, learning_rate = 2, loss = exponential, random_state = 42
+Higher = 0.7567567567567568
+    test_size = 0.12, base_estimator = None, n_estimators = 20, learning_rate = 5, loss = exponential, random_state = None
+Higher = 0.7702702702702703
+    test_size = 0.12, base_estimator = None, n_estimators = 38, learning_rate = 3, loss = exponential, random_state = 212
+Higher = 0.7837837837837838
+    test_size = 0.12, base_estimator = None, n_estimators = 77, learning_rate = 3, loss = exponential, random_state = 212
+Higher = 0.7567567567567568
+    test_size = 0.12, base_estimator = None, n_estimators = 161, learning_rate = 2, loss = square, random_state = None
+Higher = 0.7702702702702703
+    test_size = 0.12, base_estimator = None, n_estimators = 169, learning_rate = 1, loss = square, random_state = None
+Higher = 0.7702702702702703
+    test_size = 0.12, base_estimator = None, n_estimators = 300, learning_rate = 2, loss = square, random_state = 94
+
