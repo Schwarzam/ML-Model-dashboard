@@ -1,9 +1,13 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react';
 
+import { GoTrashcan } from 'react-icons/go'
+import { BiShow } from 'react-icons/bi'
 import { toast } from 'react-toastify';
 
 import Table from './table'
+
+import Compare from './compareTo'
 
 const baseurl = "http://localhost:8000"
 
@@ -15,6 +19,9 @@ export default function Predict(){
     const [tables, setTables] = useState([])
 
     const [visu, setVisu] = useState(null)
+
+    const [comparing, setComparing] = useState(null)
+    const [compareTo, setCompareTo] = useState(null)
 
     const onChange = (e) => {
         setUpload(e.target.files[0])
@@ -34,7 +41,44 @@ export default function Predict(){
             })
     }
 
+    const deleteTable = (name) => {
+        axios.post(baseurl + '/api/delete_df', {file: name})
+            .then(res => {
+                toast.success(res.data)
+                loadFiles()
+            })
+    }
+
+    const predictTable = (name) => {
+        axios.post(baseurl + '/api/predict', {file: name})
+            .then(res => {
+                toast.success('Predicted with sucess!')
+                loadFiles()
+            })
+            .catch(err => {
+                toast.error(err.response.data)
+            })
+    }
+
+    const compareTable = (name) => {
+        axios.post(baseurl + '/api/predict', {file: name})
+            .then(res => {
+                toast.success('Predicted with sucess!')
+                loadFiles()
+            })
+            .catch(err => {
+                toast.error(err.response.data)
+            })
+    }
+
+    
+
+
     const uploadFile = (file) => {
+        if (!upload){
+            return
+        }
+
         let url = baseurl + "/api/upload";
 
         let formData = new FormData();
@@ -69,17 +113,19 @@ export default function Predict(){
 
     return (
         <div>
-            <div className='grid max-w-2xl m-auto py-16'>
-                <div className='w-[200px] m-auto'>
+            <div className='grid max-w-2xl m-auto py-8 border rounded my-4'>
+                <p className='text-center font-bold text-xl py-2'>upload tables</p>
+                <div className='w-[200px] flex-1 m-auto'>
                     <label>Decoding: </label>
                     <input className='rounded-lg w-[100px]' type="text" placeholder='encoding' value={encode} onChange={(e) => setEncode(e.target.value)}></input>
-                    <p className='text-center'>{upload && upload.name}</p>
+                    
                 </div>
-                
-                <input className='m-auto py-4 w-[100px]' type="file" onChange={onChange} accept =".csv"/>
-                <button className='px-4 py-2 w-[200px] m-auto hover:bg-slate-100 bg-gray-300 rounded-lg' onClick={() => uploadFile()} >upload</button>
+                <div className='m-auto'>
+                    <input className='m-auto py-4 w-[100px]' type="file" onChange={onChange} accept =".csv"/>
+                    <button className={`px-2 py-1 w-[200px] m-auto hover:bg-slate-100 bg-gray-300 ${upload && 'bg-green-300 hover:bg-green-400'} rounded-lg`} onClick={() => uploadFile()} >upload</button>
+                </div>
+                <p className='text-center'>{upload && upload.name}</p>
             </div>
-            
 
             <div className='m-auto max-w-lg'>
                 <p>Tables uploaded: </p>
@@ -87,13 +133,15 @@ export default function Predict(){
                     {tables.map((table, index) => (
                     <li key={index} className="py-4">
                         <div className="flex space-x-3">
-                        <p className="text-sm text-red-500">delete</p>
+                        <GoTrashcan size={20} onClick={() => deleteTable(table)} className="cursor-pointer text-sm text-red-500" />
                         <div className="flex-1 space-y-1">
-                            <p className="text-sm text-gray-500">
+                            <p className={`text-sm text-gray-500 ${table.includes('predicted') && 'text-green-500'}`}>
                                 {table}
                             </p>
                         </div>
-                            <p className='cursor-pointer' onClick={() => getTable(table)}>Visualize</p>
+                            {!table.includes('predicted') && <p className='cursor-pointer' onClick={() => predictTable(table)}>predict</p>}
+                            {table.includes('predicted') && <p className='cursor-pointer text-sm' onClick={() => setComparing(table)}>compare</p>}
+                            <BiShow size={20} className='m-auto cursor-pointer' onClick={() => getTable(table)} />
                         </div>
                     </li>
                     ))}
@@ -103,6 +151,12 @@ export default function Predict(){
             {visu && 
                 <Table setVisu={setVisu} table={visu} />
             }
+
+            {(comparing && !visu) && 
+                <Compare setComparing={setComparing} compareTo={compareTo} tables={tables} />
+            }
+
+            
         </div>
     )
 }

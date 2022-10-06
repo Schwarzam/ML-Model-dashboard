@@ -1,3 +1,9 @@
 Django
 djangorestframework
 gunicorn
+
+joblib
+pandas
+numpy 
+
+scikit-learn
