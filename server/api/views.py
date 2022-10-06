@@ -16,6 +16,10 @@ from os.path import isfile, join
 
 from package import models, encoder, process_dataset
 
+from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import mean_squared_error, roc_auc_score, roc_curve
+
+
 # Create your views here.
 @api_view(['GET', 'POST'])
 @renderer_classes([JSONRenderer])
@@ -96,10 +100,25 @@ def predict(request):
 
     return Response(preds, status=200)
 
-# @api_view(['GET', 'POST'])
-# @renderer_classes([JSONRenderer])
-# def visualize_df(request):
-#     df = pd.read_csv(join('api/models/', request.data['file']))
-#     df = df.loc[:,~df.columns.str.startswith('Unname')]
-#     df = df.to_dict('records')
-#     return Response(df, status=200)
+
+@api_view(['GET', 'POST'])
+@renderer_classes([JSONRenderer])
+def compare_to(request):
+    df_pred = pd.read_csv(join('api/files/', request.data['file_pred']))
+    df_true = pd.read_csv(join('api/files/', request.data['file_true']))
+
+    if 'id_fechou' not in df_true.columns:
+        return Response('Table selected does not contain id_fechou', status=500)
+    
+    if len(df_pred) != len(df_true):
+        return Response('Tables selected does not have the same lenght', status=500)
+
+    res = {}
+    res['acc'] = accuracy_score(df_pred['id_fechou'], df_true['id_fechou'])
+    res['classf'] = classification_report(df_pred['id_fechou'], df_true['id_fechou'])
+
+    res['mse'] = mean_squared_error(df_pred['id_fechou'], df_true['id_fechou'])
+    res['auc'] = roc_auc_score(df_pred['id_fechou'], df_true['id_fechou'])
+    res['roc'] = roc_curve(df_pred['id_fechou'], df_true['id_fechou'])
+
+    return Response(res, status=200)

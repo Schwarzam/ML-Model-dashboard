@@ -13,7 +13,9 @@ export default function Compare(props) {
         if (props.tables){
             const tabls = []
             props.tables.map((tabs, index) => {
-                tabls.push({'id': index, 'name': tabs})
+                if (!tabs.includes('predicted')){
+                    tabls.push({'id': index, 'name': tabs})
+                }
             })
             setTables(tabls)
         }
@@ -32,6 +34,7 @@ export default function Compare(props) {
   return (
     <div className="absolute top-0 w-full bg-gray-900/75 h-full" onClick={() => props.setComparing(null)}>
         <div className="m-auto mt-32 max-w-2xl bg-gray-300 rounded" onClick={(e) => e.stopPropagation()}>
+            <p className='m-auto text-center pt-4 font-bold text-lg'>Select the table that contains the true values. </p>
             <Combobox className="w-96 m-auto pt-8" autocomplete="new-password" value={selected} onChange={setSelected}>
                 <div className="relative mt-1">
                 <div className="relative w-full cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-teal-300 sm:text-sm">
@@ -99,8 +102,7 @@ export default function Compare(props) {
                 </div>
             </Combobox>
 
-            
-            <p className='py-2 px-2 w-24 m-auto center text-center cursor-pointer my-8 bg-white rounded'>compare</p>
+            <p onClick={() => props.compareTable(props.comparing, selected.name)} className='py-2 px-2 w-24 m-auto center text-center cursor-pointer my-8 bg-white rounded'>compare</p>
             <div className='py-2'></div>
             
         </div>

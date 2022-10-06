@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from api.views import upload, get_files_available, visualize_df, predict, delete_df
+from api.views import upload, get_files_available, visualize_df, predict, delete_df, compare_to
 
 urlpatterns = [
     path('api/admin/', admin.site.urls),
@@ -27,5 +27,6 @@ urlpatterns = [
     path('api/visualize_df', visualize_df),
 
     path('api/predict', predict),
-    path('api/delete_df', delete_df)
+    path('api/delete_df', delete_df), 
+    path('api/compare_to', compare_to)
 ]

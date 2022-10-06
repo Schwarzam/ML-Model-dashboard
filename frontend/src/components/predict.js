@@ -9,7 +9,9 @@ import Table from './table'
 
 import Compare from './compareTo'
 
-const baseurl = "http://localhost:8000"
+import Charts from './charts'
+
+const baseurl = process.env.REACT_APP_SERVER
 
 export default function Predict(){
 
@@ -21,7 +23,8 @@ export default function Predict(){
     const [visu, setVisu] = useState(null)
 
     const [comparing, setComparing] = useState(null)
-    const [compareTo, setCompareTo] = useState(null)
+
+    const [compareData, setCompareData] = useState(null)
 
     const onChange = (e) => {
         setUpload(e.target.files[0])
@@ -60,11 +63,13 @@ export default function Predict(){
             })
     }
 
-    const compareTable = (name) => {
-        axios.post(baseurl + '/api/predict', {file: name})
+    const compareTable = (name, to) => {
+        
+        axios.post(baseurl + '/api/compare_to', {file_pred: name, file_true: to})
             .then(res => {
-                toast.success('Predicted with sucess!')
-                loadFiles()
+                setComparing(null)
+                toast.success('Compared!')
+                setCompareData(res.data)
             })
             .catch(err => {
                 toast.error(err.response.data)
@@ -110,7 +115,6 @@ export default function Predict(){
         loadFiles()
     }, [])
 
-
     return (
         <div>
             <div className='grid max-w-2xl m-auto py-8 border rounded my-4'>
@@ -153,7 +157,12 @@ export default function Predict(){
             }
 
             {(comparing && !visu) && 
-                <Compare setComparing={setComparing} compareTo={compareTo} tables={tables} />
+                <Compare setComparing={setComparing} comparing={comparing} compareTable={compareTable} tables={tables} />
+            }
+
+
+            {(compareData && !comparing && !visu) && 
+                <Charts compareData={compareData} setCompareData={setCompareData} />
             }
 
             
