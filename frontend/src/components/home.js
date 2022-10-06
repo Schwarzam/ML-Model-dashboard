@@ -11,6 +11,8 @@ const logos = [
   { name: 'django', url: 'https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg' },
   { name: 'react', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png' },
   { name: 'tensorflow', url: 'https://www.gstatic.com/devrel-devsite/prod/v24d520161c9661e427a3f6fa9973bfca56d0972dca82fa8ef65c709d915e80f3/tensorflow/images/lockup.svg' },
+  { name: 'lightgbm', url: 'https://lightgbm.readthedocs.io/en/latest/_images/LightGBM_logo_black_text.svg' },
+
 ]
 
 
@@ -46,9 +48,9 @@ export default function Home(){
                     Hackaton
                   </h1>
                   <p className="mt-6 text-xl text-gray-500">
-                    
-The purpose of this work is to create an interface and a Machine Learning model that can classify certain data provided by the Teros company.
+                      The purpose of this work is to create an interface and a Machine Learning model that can classify certain data and evaluate this model with multiple metrics showing all information on this frontend.
                   </p>
+                  <a className='text-blue-500 mt-8 rounded' href="predict">Access the dashboard here</a>
                 </div>
                 
               </div>
@@ -84,7 +86,7 @@ The purpose of this work is to create an interface and a Machine Learning model 
               <div className="relative -mr-40 pl-4 sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:pl-12">
                 <img
                   className="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
-                  src="https://tailwindui.com/img/component-images/task-app-rose.jpg"
+                  src={process.env.PUBLIC_URL + '/screens.png'}
                   alt=""
                 />
               </div>
@@ -111,9 +113,7 @@ The purpose of this work is to create an interface and a Machine Learning model 
                     Created entirely with state-of-the-art technologies.
                 </h2>
                 <p className="mt-6 max-w-3xl text-lg leading-7 text-gray-500">
-                  Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque
-                  tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus
-                  morbi vel porttitor vitae ut. Amet vitae fames senectus vitae.
+                  This is a open source project with Apache 2.0 License, you may use it and modify it how you want it.
                 </p>
                 <div className="mt-6">
                   <a href="https://github.com/schwarzam/teros-hackaton" className="text-base font-medium text-rose-500">

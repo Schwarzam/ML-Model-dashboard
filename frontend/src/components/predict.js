@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 
 import { GoTrashcan } from 'react-icons/go'
 import { BiShow } from 'react-icons/bi'
+import { IoStatsChartOutline } from 'react-icons/io5'
+
 import { toast } from 'react-toastify';
 
 import Table from './table'
@@ -116,26 +118,34 @@ export default function Predict(){
     }, [])
 
     return (
-        <div className='min-h-screen'>
+        <div className='min-h'>
             <div className='grid max-w-2xl m-auto py-8 border rounded my-4'>
                 <p className='text-center font-bold text-xl py-2'>upload tables</p>
+                <p className='text-sm font-light text-center pb-3'>Upload tables to server, you must fill the file encode that you are uploading.</p>
                 <div className='w-[200px] flex-1 m-auto'>
                     <label>Decoding: </label>
                     <input className='rounded-lg w-[100px]' type="text" placeholder='encoding' value={encode} onChange={(e) => setEncode(e.target.value)}></input>
                     
                 </div>
                 <div className='m-auto'>
-                    <input className='m-auto py-4 w-[100px]' type="file" onChange={onChange} accept =".csv"/>
-                    <button className={`px-2 py-1 w-[200px] m-auto hover:bg-slate-100 bg-gray-300 ${upload && 'bg-green-300 hover:bg-green-400'} rounded-lg`} onClick={() => uploadFile()} >upload</button>
+                    <input className='m-auto py-4 w-[103px]' type="file" onChange={onChange} accept =".csv"/>
+                    <button className={`px-2 mx-4 py-1 m-auto hover:bg-slate-100 bg-gray-300 ${upload && 'bg-green-300 hover:bg-green-400'} rounded-lg`} onClick={() => uploadFile()} >upload</button>
                 </div>
                 <p className='text-center'>{upload && upload.name}</p>
             </div>
 
             <div className='m-auto max-w-2xl py-8'>
                 <p>Tables uploaded: </p>
-                <ul role="list" className="divide-y divide-gray-200">
+                <p className='text-sm font-light'>Tables uploaded will appear here. Here you may visualize your tables by clicking the eye icon and also predict them. </p>
+                <p className='text-sm font-light'>Predicted results will appear green. </p>
+                <p className='text-sm font-light'>You may also delete tables by clicking the trash icon.</p>
+                <br/>
+                <p className='text-sm'>The stats button is used to compare predict results to true values. Once clicked you'll need to select the table with true values.</p>
+                <br/>
+                <ul role="list" className="">
                     {tables.map((table, index) => (
-                    <li key={index} className="py-4">
+                    <li key={index} className="pt-4">
+                        {!table.includes('predicted') && <div className='py-[0.5px] mb-4 rounded bg-gray-400'></div>}
                         <div className="flex space-x-3">
                         <GoTrashcan size={20} onClick={() => deleteTable(table)} className="cursor-pointer text-sm text-red-500" />
                         <div className="flex-1 space-y-1">
@@ -143,10 +153,11 @@ export default function Predict(){
                                 {table}
                             </p>
                         </div>
-                            {!table.includes('predicted') && <p className='cursor-pointer' onClick={() => predictTable(table)}>predict</p>}
-                            {table.includes('predicted') && <p className='cursor-pointer text-sm' onClick={() => setComparing(table)}>compare</p>}
+                            {!table.includes('predicted') && <p className='cursor-pointer text-sm' onClick={() => predictTable(table)}>predict</p>}
+                            {table.includes('predicted') && <IoStatsChartOutline className='cursor-pointer text-sm' onClick={() => setComparing(table)} />}
                             <BiShow size={20} className='m-auto cursor-pointer' onClick={() => getTable(table)} />
                         </div>
+                        {table.includes('predicted') && <div className='py-[0.5px] mt-4 rounded bg-gray-400'></div>}
                     </li>
                     ))}
                 </ul>

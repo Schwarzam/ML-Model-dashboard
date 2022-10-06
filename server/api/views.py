@@ -123,7 +123,6 @@ def compare_to(request):
     res['roc'] = roc_curve(df_pred['id_fechou'], df_true['id_fechou'])
 
     tn, fp, fn, tp = confusion_matrix(df_pred['id_fechou'], df_true['id_fechou']).ravel()
-    res['cfm'] = [tn, fp, fn, tp]
 
     res['fpr'] = fp / (fp + tn) # false positive rate
     res['fnr'] = fn / (tp + fn) # false negative rate
