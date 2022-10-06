@@ -35,7 +35,8 @@ export default function Compare(props) {
   return (
     <div className="absolute top-0 w-full bg-gray-900/75 h-screen" onClick={() => props.setComparing(null)}>
         <div className="m-auto mt-32 max-w-2xl bg-gray-300 rounded" onClick={(e) => e.stopPropagation()}>
-            <p className='m-auto text-center pt-4 font-bold text-lg'>Select the table that contains the true values. </p>
+            <p className='m-auto text-center pt-4 font-bold text-lg max-w-xl'>Select the table that contains the true values of the prediction table selected. </p>
+            <p className='m-auto text-center pt-4 font-light text-sm'>Prediction table selected: {props.comparing}</p>
             <Combobox className="w-96 m-auto pt-8" autocomplete="new-password" value={selected} onChange={setSelected}>
                 <div className="relative mt-1">
                 <div className="relative w-full cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-teal-300 sm:text-sm">

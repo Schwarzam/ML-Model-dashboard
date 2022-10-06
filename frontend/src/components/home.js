@@ -26,17 +26,13 @@ export default function Home(){
           <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-24 lg:px-8">
             <div>
               <div>
-                <img
-                  className="h-11 w-auto"
-                  src="https://teros.com.br/wp-content/uploads/2021/04/Logotagline.svg"
-                  alt="teros"
-                />
+                
               </div>
               <div className="mt-20">
                 <div>
-                  <a href="#" className="inline-flex space-x-4">
+                <a href="/predict" className="inline-flex space-x-4">
                     <span className="rounded bg-rose-50 px-2.5 py-1 text-sm font-semibold text-rose-500">
-                      proposal
+                    Access the dashboard here
                     </span>
                     <span className="inline-flex items-center space-x-1 text-sm font-medium text-rose-500">
                       <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
@@ -45,12 +41,12 @@ export default function Home(){
                 </div>
                 <div className="mt-6 sm:max-w-xl">
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                    Hackaton
+                    ML dashboard
                   </h1>
                   <p className="mt-6 text-xl text-gray-500">
                       The purpose of this work is to create an interface and a Machine Learning model that can classify certain data and evaluate this model with multiple metrics showing all information on this frontend.
                   </p>
-                  <a className='text-blue-500 mt-8 rounded' href="predict">Access the dashboard here</a>
+                  
                 </div>
                 
               </div>

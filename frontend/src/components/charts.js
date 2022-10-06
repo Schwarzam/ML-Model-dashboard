@@ -124,6 +124,8 @@ export default function Charts(props){
                         <p className='text-[12px] text-left'>Harmonic mean between precision and recall.</p>
                     </div>
                   </div>
+
+                  
                   
                   <div className="bg-white px-4 py-5 grid grid-cols-3 sm:gap-4 sm:px-6">
                     <dt className="text-sm font-medium text-gray-500">Confusion matrix</dt>
@@ -155,6 +157,14 @@ export default function Charts(props){
                       <div className='text-center'>
                           <p className='text-[12px] text-left'>Main classification metrics. More about at <a className='text-blue-500' href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html">scikit docs</a></p>
                       </div>
+                  </div>
+
+                  <div className="px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <dt className="text-sm font-medium text-gray-500">Area Under The Curve (AUC)</dt>
+                    <dd className="mt-1 text-sm text-gray-900 sm:col-span-1 sm:mt-0">{props.compareData['auc'].toFixed(4)}</dd>
+                    <div className='text-center'>
+                        <p className='text-[12px] text-left'>AUC (Area Under The Curve) ROC (Receiver Operating Characteristics) curve shown in the chart below. More about at <a className='text-blue-500' href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html">scikit docs</a></p>
+                    </div>
                   </div>
                 
                 </dl>
