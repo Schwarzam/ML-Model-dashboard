@@ -10,6 +10,7 @@ export default function Compare(props) {
   const [tables, setTables] = useState([])
 
   useEffect(() => {
+        window.scrollTo(0, 0)
         if (props.tables){
             const tabls = []
             props.tables.map((tabs, index) => {
@@ -32,7 +33,7 @@ export default function Compare(props) {
         )
 
   return (
-    <div className="absolute top-0 w-full bg-gray-900/75 h-full" onClick={() => props.setComparing(null)}>
+    <div className="absolute top-0 w-full bg-gray-900/75 h-screen" onClick={() => props.setComparing(null)}>
         <div className="m-auto mt-32 max-w-2xl bg-gray-300 rounded" onClick={(e) => e.stopPropagation()}>
             <p className='m-auto text-center pt-4 font-bold text-lg'>Select the table that contains the true values. </p>
             <Combobox className="w-96 m-auto pt-8" autocomplete="new-password" value={selected} onChange={setSelected}>

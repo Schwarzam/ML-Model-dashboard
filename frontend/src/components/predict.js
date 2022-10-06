@@ -116,7 +116,7 @@ export default function Predict(){
     }, [])
 
     return (
-        <div>
+        <div className='min-h-screen'>
             <div className='grid max-w-2xl m-auto py-8 border rounded my-4'>
                 <p className='text-center font-bold text-xl py-2'>upload tables</p>
                 <div className='w-[200px] flex-1 m-auto'>
@@ -131,7 +131,7 @@ export default function Predict(){
                 <p className='text-center'>{upload && upload.name}</p>
             </div>
 
-            <div className='m-auto max-w-lg'>
+            <div className='m-auto max-w-2xl py-8'>
                 <p>Tables uploaded: </p>
                 <ul role="list" className="divide-y divide-gray-200">
                     {tables.map((table, index) => (

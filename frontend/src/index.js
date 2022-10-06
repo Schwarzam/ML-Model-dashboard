@@ -17,6 +17,7 @@ import About from './components/about';
 import Navbar from './components/navbar';
 
 import Predict from './components/predict'
+import Footer from './components/footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -31,6 +32,7 @@ root.render(
           
       </Routes>
     </BrowserRouter>
+    <Footer />
     <ToastContainer position="bottom-center"
                     autoClose={5000}
                     hideProgressBar={false}

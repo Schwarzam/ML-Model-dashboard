@@ -18,7 +18,8 @@ from package import models, encoder, process_dataset
 
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.metrics import mean_squared_error, roc_auc_score, roc_curve
-
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import f1_score
 
 # Create your views here.
 @api_view(['GET', 'POST'])
@@ -121,4 +122,16 @@ def compare_to(request):
     res['auc'] = roc_auc_score(df_pred['id_fechou'], df_true['id_fechou'])
     res['roc'] = roc_curve(df_pred['id_fechou'], df_true['id_fechou'])
 
+    tn, fp, fn, tp = confusion_matrix(df_pred['id_fechou'], df_true['id_fechou']).ravel()
+    res['cfm'] = [tn, fp, fn, tp]
+
+    res['fpr'] = fp / (fp + tn) # false positive rate
+    res['fnr'] = fn / (tp + fn) # false negative rate
+    res['tnr'] = tn / (tn + fp) #true negative rate
+    res['tpr'] = tp / (tp + fn) #true negative rate
+
+    res['f1'] = f1_score(df_pred['id_fechou'], df_true['id_fechou'])
+
+    res['pred_table'] = request.data['file_pred']
+    res['true_table'] = request.data['file_true']
     return Response(res, status=200)
