@@ -1,0 +1,222 @@
+Higher = 0.7642276422764228
+    test_size = 0.2, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 1.0, subsample_freq = 0, colsample_bytree = 0.2, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.7804878048780488
+    test_size = 0.2, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 1.0, subsample_freq = 0, colsample_bytree = 0.2, reg_alpha = 0.5, reg_lambda = 0.0
+Higher = 0.7642276422764228
+    test_size = 0.2, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 0, colsample_bytree = 0.2, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.7804878048780488
+    test_size = 0.2, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 0, colsample_bytree = 0.2, reg_alpha = 0.5, reg_lambda = 0.0
+Higher = 0.7886178861788617
+    test_size = 0.2, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.7000000000000001, subsample_freq = 2, colsample_bytree = 0.4, reg_alpha = 0.0, reg_lambda = 0.5
+Higher = 0.7967479674796748
+    test_size = 0.2, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.7000000000000001, subsample_freq = 2, colsample_bytree = 0.7000000000000001, reg_alpha = 0.5, reg_lambda = 0.5
+Higher = 0.8048780487804879
+    test_size = 0.2, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 25, subsample = 0.7000000000000001, subsample_freq = 3, colsample_bytree = 0.9, reg_alpha = 0.5, reg_lambda = 0.5
+Higher = 0.7642276422764228
+    test_size = 0.2, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 0, colsample_bytree = 0.2, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.7804878048780488
+    test_size = 0.2, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 0, colsample_bytree = 0.2, reg_alpha = 0.0, reg_lambda = 1.0
+Higher = 0.7886178861788617
+    test_size = 0.2, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 0, colsample_bytree = 0.5, reg_alpha = 2.0, reg_lambda = 3.0
+Higher = 0.7967479674796748
+    test_size = 0.2, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 0, colsample_bytree = 0.2, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.7560975609756098
+    test_size = 0.2, boosting_type = dart, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 0, colsample_bytree = 0.2, reg_alpha = 1.0, reg_lambda = 0.0
+Higher = 0.7723577235772358
+    test_size = 0.2, boosting_type = dart, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 0, colsample_bytree = 0.4, reg_alpha = 0.0, reg_lambda = 1.5
+Higher = 0.7967479674796748
+    test_size = 0.2, boosting_type = dart, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 0, colsample_bytree = 0.7000000000000001, reg_alpha = 0.5, reg_lambda = 0.0
+Higher = 0.7886178861788617
+    test_size = 0.2, boosting_type = goss, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 0, colsample_bytree = 0.2, reg_alpha = 1.0, reg_lambda = 2.5
+Higher = 0.7886178861788617
+    test_size = 0.2, boosting_type = goss, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 1, subsample_freq = 1, colsample_bytree = 0.2, reg_alpha = 1.0, reg_lambda = 2.5
+Higher = 0.7741935483870968
+    test_size = 0.1, boosting_type = goss, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 2.0
+Higher = 0.7903225806451613
+    test_size = 0.1, boosting_type = goss, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.5, reg_lambda = 2.5
+Higher = 0.8225806451612904
+    test_size = 0.1, boosting_type = goss, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 1.5, reg_lambda = 4.5
+Higher = 0.8387096774193549
+    test_size = 0.1, boosting_type = goss, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 3.0, reg_lambda = 0.5
+Higher = 0.7580645161290323
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.7741935483870968
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 2.5
+Higher = 0.7903225806451613
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 3.0
+Higher = 0.8064516129032258
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.9, reg_alpha = 2.5, reg_lambda = 4.0
+Higher = 0.8225806451612904
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.9, reg_alpha = 2.5, reg_lambda = 4.5
+Higher = 0.8387096774193549
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.2, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 4.5
+Higher = 0.8548387096774194
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.30000000000000004, subsample_freq = 4, colsample_bytree = 0.6, reg_alpha = 2.0, reg_lambda = 2.0
+Higher = 0.7580645161290323
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.7741935483870968
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 2.5
+Higher = 0.7903225806451613
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 3.0
+Higher = 0.8064516129032258
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.9000000000000001, reg_alpha = 2.5, reg_lambda = 4.0
+Higher = 0.8225806451612904
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.9000000000000001, reg_alpha = 2.5, reg_lambda = 4.5
+Higher = 0.8387096774193549
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 1.5, reg_lambda = 1.5
+Higher = 0.8548387096774194
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 15, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 2.5, reg_lambda = 1.5
+Higher = 0.8709677419354839
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.5, min_child_samples = 25, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.30000000000000004, reg_alpha = 2.5, reg_lambda = 0.0
+Higher = 0.7580645161290323
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.7741935483870968
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 2.5
+Higher = 0.7903225806451613
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 3.0
+Higher = 0.8064516129032258
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.9000000000000001, reg_alpha = 2.5, reg_lambda = 4.0
+Higher = 0.8225806451612904
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.9000000000000001, reg_alpha = 2.5, reg_lambda = 4.5
+Higher = 0.8387096774193549
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 1.5, reg_lambda = 1.5
+Higher = 0.7580645161290323
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.7741935483870968
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 2.5
+Higher = 0.7903225806451613
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 3.0
+Higher = 0.8064516129032258
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.9000000000000001, reg_alpha = 2.5, reg_lambda = 4.0
+Higher = 0.8225806451612904
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.9000000000000001, reg_alpha = 2.5, reg_lambda = 4.5
+Higher = 0.8387096774193549
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 1.5, reg_lambda = 1.5
+Higher = 0.7580645161290323
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.7741935483870968
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 2.5
+Higher = 0.7903225806451613
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 3.0
+Higher = 0.8064516129032258
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.8225806451612904
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.5, reg_lambda = 2.0
+Higher = 0.8387096774193549
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 1.5, reg_lambda = 1.5
+Higher = 0.8548387096774194
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 15, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 2.5, reg_lambda = 1.5
+Higher = 0.7580645161290323
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.7741935483870968
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 2.5
+Higher = 0.7903225806451613
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 3.0
+Higher = 0.8064516129032258
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.8225806451612904
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.5, reg_lambda = 2.0
+Higher = 0.8387096774193549
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 1.5, reg_lambda = 1.5
+Higher = 0.7580645161290323
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.7741935483870968
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 2.5
+Higher = 0.7903225806451613
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 3.0
+Higher = 0.8064516129032258
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.8225806451612904
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.5, reg_lambda = 2.0
+Higher = 0.8387096774193549
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 1.5, reg_lambda = 1.5
+Higher = 0.8548387096774194
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 13, subsample = 0.30000000000000004, subsample_freq = 2, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 0.5
+Higher = 0.7580645161290323
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.7741935483870968
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 2.5
+Higher = 0.7903225806451613
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 3.0
+Higher = 0.8064516129032258
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.8225806451612904
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.5, reg_lambda = 2.0
+Higher = 0.8387096774193549
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 1.5, reg_lambda = 1.5
+Higher = 0.8548387096774194
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 15, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 2.5, reg_lambda = 1.5
+Higher = 0.7580645161290323
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.7741935483870968
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 2.5
+Higher = 0.7903225806451613
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 3.0
+Higher = 0.8225806451612904
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.2, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 4.0
+Higher = 0.8387096774193549
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 10, subsample = 0.2, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.0, reg_lambda = 4.5
+Higher = 0.8548387096774194
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 15, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 2.5, reg_lambda = 1.5
+Higher = 0.7580645161290323
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 1.5, reg_lambda = 0.0
+Higher = 0.7741935483870968
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 2.0, reg_lambda = 0.0
+Higher = 0.7903225806451613
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 2.5, reg_lambda = 3.0
+Higher = 0.8225806451612904
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.2, subsample_freq = 1, colsample_bytree = 0.4, reg_alpha = 0.0, reg_lambda = 3.5
+Higher = 0.8387096774193549
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.30000000000000004, subsample_freq = 4, colsample_bytree = 0.7000000000000001, reg_alpha = 1.0, reg_lambda = 3.0
+Higher = 0.8548387096774194
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = regression, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.30000000000000004, subsample_freq = 4, colsample_bytree = 0.7000000000000001, reg_alpha = 1.5, reg_lambda = 1.5
+Higher = 0.8709677419354839
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.5, min_child_samples = 26, subsample = 0.2, subsample_freq = 1, colsample_bytree = 0.4, reg_alpha = 0.5, reg_lambda = 1.5
+Higher = 0.7580645161290323
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.5, reg_lambda = 4.5
+Higher = 0.7741935483870968
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 2.0, reg_lambda = 0.0
+Higher = 0.7903225806451613
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 2.5, reg_lambda = 1.0
+Higher = 0.8225806451612904
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 2, colsample_bytree = 0.1, reg_alpha = 0.5, reg_lambda = 4.0
+Higher = 0.7580645161290323
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.5, reg_lambda = 4.5
+Higher = 0.7741935483870968
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 2.0, reg_lambda = 0.0
+Higher = 0.7903225806451613
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 2.5, reg_lambda = 1.0
+Higher = 0.8225806451612904
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 2, colsample_bytree = 0.1, reg_alpha = 0.5, reg_lambda = 4.0
+Higher = 0.7608695652173914
+    test_size = 0.15, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.30000000000000004, subsample_freq = 1, colsample_bytree = 0.7000000000000001, reg_alpha = 0.0, reg_lambda = 0.0
+Higher = 0.7717391304347826
+    test_size = 0.15, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.30000000000000004, subsample_freq = 2, colsample_bytree = 0.4, reg_alpha = 0.5, reg_lambda = 0.0
+Higher = 0.7837837837837838
+    test_size = 0.12, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 6, subsample = 0.1, subsample_freq = 4, colsample_bytree = 0.7000000000000001, reg_alpha = 0.0, reg_lambda = 0.6
+Higher = 0.7903225806451613
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.1, reg_alpha = 0.6, reg_lambda = 0.8999999999999999
+Higher = 0.7906976744186046
+    test_size = 0.07, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.4, reg_alpha = 0.3, reg_lambda = 0.6
+Higher = 0.813953488372093
+    test_size = 0.07, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 2, colsample_bytree = 0.1, reg_alpha = 1.2, reg_lambda = 0.6
+Higher = 0.8604651162790697
+    test_size = 0.07, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 6, subsample = 0.1, subsample_freq = 3, colsample_bytree = 0.7000000000000001, reg_alpha = 0.8999999999999999, reg_lambda = 0.0
+Higher = 0.7906976744186046
+    test_size = 0.07, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.6, reg_alpha = 0.5, reg_lambda = 0.7000000000000001
+Higher = 0.813953488372093
+    test_size = 0.07, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.7000000000000001, reg_alpha = 0.30000000000000004, reg_lambda = 0.30000000000000004
+Higher = 0.8372093023255814
+    test_size = 0.07, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 1, colsample_bytree = 0.7000000000000001, reg_alpha = 0.6000000000000001, reg_lambda = 0.0
+Higher = 0.8837209302325582
+    test_size = 0.07, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 2, colsample_bytree = 0.8, reg_alpha = 0.0, reg_lambda = 1.4000000000000001
+Higher = 0.7903225806451613
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = 1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.4, subsample_freq = 4, colsample_bytree = 0.1, reg_alpha = 0.9, reg_lambda = 2.7
+Higher = 0.7903225806451613
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.1, subsample_freq = 3, colsample_bytree = 0.7000000000000001, reg_alpha = 0.5, reg_lambda = 0.8
+Higher = 0.8064516129032258
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 1, subsample = 0.2, subsample_freq = 3, colsample_bytree = 0.30000000000000004, reg_alpha = 1.0, reg_lambda = 1.9000000000000001
+Higher = 0.8225806451612904
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 6, subsample = 0.30000000000000004, subsample_freq = 4, colsample_bytree = 0.4, reg_alpha = 0.2, reg_lambda = 0.0
+Higher = 0.8387096774193549
+    test_size = 0.1, boosting_type = gbdt, num_leaves = 20, max_depth = -1, n_estimators = 50, objective = binary, min_split_gain = 0.0, min_child_samples = 11, subsample = 0.2, subsample_freq = 4, colsample_bytree = 0.30000000000000004, reg_alpha = 1.8, reg_lambda = 0.1
