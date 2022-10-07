@@ -14,27 +14,28 @@ This project was developed to the Teros Hackaton that happened at presbyterian m
 
 
 ### This repository is separated in 3 main parts
-### /dados 
+#### /dados 
 In this folder we did all machine learning and processing data part. Here we ran all tests to train the model.
 This section can be skipped if you just want to implement the backend and frontend with other models
-
-### /server 
+<br>
+#### /server 
 In this folder we have the backend, a django application that provides all api needed to the frontend.
 Here all the work happens, the predict and the metrics.
-
-### /frontend
+<br>
+#### /frontend
 In this folder we have a react app.
 The frontend is the program's interface, where we can upload tables, predict and test predict metrics.
+<br>
 
-
-### /nginx
+#### /nginx
 Used on productios (docker) to create a proxy to the backend and serve static files like the frontend. Unifying all application layers in one program.
+<br>
 
-
-### docker-compose.yml
+#### docker-compose.yml
 Docker image to deploy all layers of application, deploying django, react-app-frontend and nginx proxy. 
 
-You may create the docker container by running on UNIX systems:
+<br>
+After installing docker in your system. You may create the docker container by running on UNIX systems:
 ```
 ./run_docker.sh
 ```
@@ -45,5 +46,9 @@ or on Windows:
 docker-compose up
 ```
 
-Remember that you need to have docker installed in your system.
+##### application will be available at localhost address:
+
+ - http://127.0.0.1
+ - http://localhost
+
 
