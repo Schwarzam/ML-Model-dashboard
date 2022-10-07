@@ -27,23 +27,29 @@ In this folder we did all machine learning and processing data part. Here we ran
 This section can be skipped if you just want to implement the backend and frontend with other models.
 
 <br>
+
 #### /server 
 In this folder we have the backend, a django application that provides all api needed to the frontend.
 Here all the work happens, the predict and the metrics.
+
 <br>
+
 #### /frontend
 In this folder we have a react app.
 The frontend is the program's interface, where we can upload tables, predict and test predict metrics.
+
 <br>
 
 #### /nginx
 Used on productios (docker) to create a proxy to the backend and serve static files like the frontend. Unifying all application layers in one program.
+
 <br>
 
 #### docker-compose.yml
 Docker image to deploy all layers of application, deploying django, react-app-frontend and nginx proxy. 
 
 <br>
+
 After installing docker in your system. You may create the docker container by running on UNIX systems:
 
 ```
