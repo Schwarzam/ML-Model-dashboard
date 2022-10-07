@@ -45,6 +45,7 @@ Docker image to deploy all layers of application, deploying django, react-app-fr
 
 <br>
 After installing docker in your system. You may create the docker container by running on UNIX systems:
+
 ```
 ./run_docker.sh
 ```
