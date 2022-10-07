@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { GoTrashcan } from 'react-icons/go'
 import { BiShow } from 'react-icons/bi'
 import { IoStatsChartOutline } from 'react-icons/io5'
+import { BsDownload } from 'react-icons/bs'
 
 import { toast } from 'react-toastify';
 
@@ -153,6 +154,7 @@ export default function Predict(){
                                 {table}
                             </p>
                         </div>
+                            <a href={process.env.REACT_APP_SERVER + '/media/' + table}><BsDownload size={20} className='m-auto cursor-pointer' /></a>
                             {!table.includes('predicted') && <p className='cursor-pointer text-sm' onClick={() => predictTable(table)}>predict</p>}
                             {table.includes('predicted') && <IoStatsChartOutline className='cursor-pointer text-sm' onClick={() => setComparing(table)} />}
                             <BiShow size={20} className='m-auto cursor-pointer' onClick={() => getTable(table)} />

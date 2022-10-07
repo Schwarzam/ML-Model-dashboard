@@ -21,7 +21,7 @@ from sklearn.metrics import mean_squared_error, roc_auc_score, roc_curve
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import f1_score
 
-
+from django.http import FileResponse
 
 # Create your views here.
 @api_view(['GET', 'POST'])

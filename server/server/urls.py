@@ -15,6 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.static import static
+
+from django.conf import settings
 
 from api.views import upload, get_files_available, visualize_df, predict, delete_df, compare_to
 
@@ -29,4 +32,4 @@ urlpatterns = [
     path('api/predict', predict),
     path('api/delete_df', delete_df), 
     path('api/compare_to', compare_to)
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
