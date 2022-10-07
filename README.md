@@ -16,7 +16,8 @@ This project was developed to the Teros Hackaton that happened at presbyterian m
 ### This repository is separated in 3 main parts
 #### /dados 
 In this folder we did all machine learning and processing data part. Here we ran all tests to train the model.
-This section can be skipped if you just want to implement the backend and frontend with other models
+This section can be skipped if you just want to implement the backend and frontend with other models.
+
 <br>
 #### /server 
 In this folder we have the backend, a django application that provides all api needed to the frontend.

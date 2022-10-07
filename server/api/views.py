@@ -84,7 +84,8 @@ def predict(request):
         df = process_dataset.processColumns(df)
         train_cols, target = process_dataset.generate_labels(df)
         X = process_dataset.scaleData(df[train_cols], useSaved=False)
-    except:
+    except Exception as e:
+        print(e)
         return Response('Could not process dataset, check if columns are correct', status = 500)
 
     model = joblib.load('api/models/model')

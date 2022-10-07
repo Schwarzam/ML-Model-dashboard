@@ -8,7 +8,15 @@ import numpy as np
 
 
 def cap_outliers(df, column):
-    
+    """Remove outliers.
+
+    Args:
+        df (pd.DataFrame): DataFrame
+        column (str): column name to remove outliers
+
+    Returns:
+        pd.DataFrame: Update dataframe.
+    """    
     upper = df[column].mean() + 3*df[column].std()
     down = df[column].mean() - 3*df[column].std()
 

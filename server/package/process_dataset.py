@@ -63,7 +63,9 @@ def processColumns(
 
     Returns:
         pd.DataFrame: modified DataFrame
-    """                 
+    """              
+
+    print(df.columns)   
 
     if create_columns:
         df["Custo_Total_per_Valor_corrigido2"] = df["Custo_Total"]/df["Valor_corrigido2"]

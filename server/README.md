@@ -14,3 +14,4 @@ python3 manage.py runserver 0:8000
 Basically all functions are inside *api/views.py*.
 All routes definitions are inside *server/urls.py*
 
+The *package* folder contains procedures created to process the tables and predictions.
