@@ -1,5 +1,10 @@
 # Model dashboard
 
+Gustavo Bernard Schwarz 32141157
+Vincenzo Sivero Ferreira Alberice 32135661
+Paulo Henrique Sousa Camargo 32138121
+Thales Torres Lopes 32135513
+
 This project aimed to create a hub where a machine learning model on the backend could be used to predict and measure metrics in an easy and beautiful way.
 
 Put your model in the backend, and do all the predictions and see the metrics through the interface.
@@ -50,5 +55,8 @@ docker-compose up
 
  - http://127.0.0.1
  - http://localhost
+
+
+
 
 
