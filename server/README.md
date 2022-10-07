@@ -1,5 +1,7 @@
 # server
 
+This is the backend of the project, written using Django framework.
+
 Install the dependencies and devDependencies and start the server.
 ```sh
 pip3 install -r requirements.txt
