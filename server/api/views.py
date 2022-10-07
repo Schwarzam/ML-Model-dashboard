@@ -21,10 +21,14 @@ from sklearn.metrics import mean_squared_error, roc_auc_score, roc_curve
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import f1_score
 
+
+
 # Create your views here.
 @api_view(['GET', 'POST'])
 @renderer_classes([JSONRenderer])
 def upload(request):
+    """Handle table upload. Save tables at api/files
+    """    
     try:
         file = request.data['file']
     except:
@@ -43,6 +47,8 @@ def upload(request):
 @api_view(['GET', 'POST'])
 @renderer_classes([JSONRenderer])
 def get_files_available(request):
+    """Return files uploaded, they're all files inside api/files
+    """  
     onlyfiles = [f for f in listdir('api/files/') if isfile(join('api/files/', f))]
     onlyfiles = sorted(onlyfiles)
     return Response(onlyfiles, status=200)
@@ -51,12 +57,16 @@ def get_files_available(request):
 @api_view(['GET', 'POST'])
 @renderer_classes([JSONRenderer])
 def delete_df(request):
+    """Delete table from api/files
+    """
     os.remove(join('api/files/', request.data['file']))
     return Response('Removed!', status=200)
 
 @api_view(['GET', 'POST'])
 @renderer_classes([JSONRenderer])
 def visualize_df(request):
+    """Return records of selected table in JSON format.
+    """
     df = pd.read_csv(join('api/files/', request.data['file']))
     df = df.loc[:,~df.columns.str.startswith('Unname')]
     df = df.to_dict('records')
@@ -65,22 +75,8 @@ def visualize_df(request):
 @api_view(['GET', 'POST'])
 @renderer_classes([JSONRenderer])
 def predict(request):
-    df = pd.read_csv(join('api/files/', request.data['file']))
-    
-    model = joblib.load('api/models/model')
-    
-    df = encoder.encode_DataFrame(df)
-    df = process_dataset.processColumns(df)
-
-    train_cols, target = process_dataset.generate_labels(df)
-    X = process_dataset.scaleData(df[train_cols], useSaved=False)
-    preds = model.predict(X)
-    return Response(preds, status=200)
-
-
-@api_view(['GET', 'POST'])
-@renderer_classes([JSONRenderer])
-def predict(request):
+    """This function use model inside api/models folder to predict selected table
+    """
     df_original = pd.read_csv(join('api/files/', request.data['file']))
     
     try:
@@ -105,6 +101,8 @@ def predict(request):
 @api_view(['GET', 'POST'])
 @renderer_classes([JSONRenderer])
 def compare_to(request):
+    """Function used to create metrics of model by comparin predictions table with true value table.
+    """
     df_pred = pd.read_csv(join('api/files/', request.data['file_pred']))
     df_true = pd.read_csv(join('api/files/', request.data['file_true']))
 
