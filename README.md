@@ -1,8 +1,9 @@
 # Model dashboard
 
+[Developed during a hackaton]
 This project aimed to create a hub where a machine learning model on the backend could be used to predict and measure metrics in an easy and beautiful way.
 
-Put your model in the backend, and do all the predictions and see the metrics through the interface.
+Put your scikit model in the backend, and do all the predictions and see the metrics through the interface.
 
 The machine learning model used in the repository was trained on a specific set of data for the hackaton, but any other use can be easily adapted.
 
